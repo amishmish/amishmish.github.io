@@ -1,4 +1,19 @@
+@font-face {
+    font-family: heading;
+    src: url(FlowerGarden.ttf);
+}
+
 h1 {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:heading;
+    text-align: center;
+    font-size: 100px;
+    color:#2c6e49;
+}
+
+body {
+    background-color: #fefee3;
+}
+
+p {
     text-align: center;
 }
