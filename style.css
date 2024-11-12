@@ -1,5 +1,5 @@
 @font-face {
-    font-family: heading2;
+    font-family: heading;
     src: url(CentralVintage.ttf);
 }
 
@@ -8,17 +8,22 @@
     src: url(Fredoka-VariableFont_wdth\,wght.ttf)
 }
 
+@font-face {
+    font-family: subheading;
+    src: url(AbrilFatface-Regular.ttf);
+}
+
 #title {
-    background-color: #FFE66D;
+    background-color: #d62828;
     margin:0;
     
 }
 
 h1 {
-    font-family:heading2;
+    font-family:heading;
     text-align: center;
     font-size: 100px;
-    color:#FF6B6B;
+    color:#fcbf49;
     font-weight: normal;
     margin:0;
     padding-top: 20px
@@ -26,7 +31,7 @@ h1 {
 }
 
 body {
-    background-color: #F7FFF7;
+    background-color: #eae2b7;
     padding: 0;
     margin: 0;
 }
@@ -35,6 +40,7 @@ p {
     text-align: center;
     font-family: body;
     font-size: 18px;
+    color: #003049;
 }
 
 li {
@@ -46,9 +52,9 @@ li {
     margin-left: 20px;
     margin-right: 20px;
     font-size: 24px;
-    font-family: heading2;
-    background-color: #4ECDC4;
-    border-color: #FFE66D;
+    font-family: subheading;
+    background-color: #f77f00;
+    border-color: #D62828;
 }
 
 ul {
@@ -61,44 +67,44 @@ footer {
 
 a:link { 
     text-decoration: none; 
-    color: #1A535C;
+    color: #EAE2B7;
 } 
 a:visited { 
     text-decoration: none; 
-    color: #1A535C
+    color: #EAE2B7;
 } 
 a:hover { 
     text-decoration: none;
-    color: #1A535C 
-} 
+    color: #EAE2B7;
+}
 a:active { 
     text-decoration: none; 
-    color: #1A535C
+    color: #EAE2B7;
 }
 
 #nav {
-    background-color:#1A535C;
+    background-color:#f77f00;
     text-align: center;
-    color:#4ECDC4;
+    color:#003049;
     overflow: hidden;
 }
 
 #nav a {
     float:left;
-    color: #4ECDC4;
+    color: #003049;
     text-align: center;
     padding: 20px 20px 20px 20px;
     text-decoration: none;
     font-size: 17px;
-    font-family: body;
+    font-family: subheading;
     margin:0;
   }
 #nav a:hover {
-    background-color: #FF6B6B;
-    color: #F7FFF7;
+    background-color: #fcbf49;
+    color: #EAE2B7;
 }
 
 #nav a.active {
-    background-color: #4ECDC4;
-    color: #F7FFF7;
+    background-color: #003049;
+    color: #fcbf49;
 }
