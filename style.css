@@ -1,34 +1,104 @@
 @font-face {
-    font-family: heading1;
-    src: url(Bavista_Soulare.ttf);
-}
-
-@font-face {
     font-family: heading2;
     src: url(CentralVintage.ttf);
 }
 
-
-h1 {
-    font-family:heading1;
-    text-align: center;
-    font-size: 100px;
-    color:#a41623;
-    font-weight: normal;
+@font-face {
+    font-family: body;
+    src: url(Fredoka-VariableFont_wdth\,wght.ttf)
 }
 
-h2 {
+#title {
+    background-color: #FFE66D;
+    margin:0;
+    
+}
+
+h1 {
     font-family:heading2;
     text-align: center;
     font-size: 100px;
-    color:#772f1a;
+    color:#FF6B6B;
     font-weight: normal;
+    margin:0;
+    padding-top: 20px
+    
 }
 
 body {
-    background-color: #fefee3;
+    background-color: #F7FFF7;
+    padding: 0;
+    margin: 0;
 }
 
 p {
     text-align: center;
+    font-family: body;
+    font-size: 18px;
+}
+
+li {
+    text-align: center;
+    border: solid;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 24px;
+    font-family: heading2;
+    background-color: #4ECDC4;
+    border-color: #FFE66D;
+}
+
+ul {
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+}
+
+a:link { 
+    text-decoration: none; 
+    color: #1A535C;
+} 
+a:visited { 
+    text-decoration: none; 
+    color: #1A535C
+} 
+a:hover { 
+    text-decoration: none;
+    color: #1A535C 
+} 
+a:active { 
+    text-decoration: none; 
+    color: #1A535C
+}
+
+#nav {
+    background-color:#1A535C;
+    text-align: center;
+    color:#4ECDC4;
+    overflow: hidden;
+}
+
+#nav a {
+    float:left;
+    color: #4ECDC4;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: body;
+    margin:0;
+  }
+#nav a:hover {
+    background-color: #FF6B6B;
+    color: #F7FFF7;
+}
+
+#nav a.active {
+    background-color: #4ECDC4;
+    color: #F7FFF7;
 }
