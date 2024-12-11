@@ -24,7 +24,7 @@
 h1 {
     font-family:heading;
     text-align: center;
-    font-size: 100px;
+    font-size: 125px;
     color:#fcbf49;
     font-weight: normal;
     margin:0;
@@ -45,7 +45,7 @@ body {
     color: #003049;
 }
 
-li {
+.footer li {
     text-align: center;
     border: solid;
     display: inline-block;
@@ -59,7 +59,7 @@ li {
     border-color: #D62828;
 }
 
-ul {
+.footer ul {
     display: inline-block;
 }
 
@@ -69,46 +69,51 @@ footer {
     padding: 30px 30px;
 }
 
-a:link { 
+footer a:link { 
     text-decoration: none; 
     color: #EAE2B7;
 } 
-a:visited { 
+footer a:visited { 
     text-decoration: none; 
     color: #EAE2B7;
 } 
-a:hover { 
+footer a:hover { 
     text-decoration: none;
     color: #EAE2B7;
 }
-a:active { 
+footer a:active { 
     text-decoration: none; 
     color: #EAE2B7;
 }
 
-#nav {
+nav {
     background-color:#f77f00;
     text-align: center;
     color:#003049;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
-#nav a {
+nav a {
     float:left;
     color: #003049;
     text-align: center;
     padding: 20px 20px 20px 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 24px;
     font-family: subheading;
     margin:0;
-  }
-#nav a:hover {
+    width: 50%;
+
+}
+
+nav a:hover {
     background-color: #fcbf49;
     color: #EAE2B7;
 }
 
-#nav a.active {
+nav a.active {
     background-color: #003049;
     color: #fcbf49;
 }
