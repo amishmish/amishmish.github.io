@@ -38,14 +38,6 @@ body {
     margin: 0;
 }
 
-#about p {
-    text-align: center;
-    font-family: body;
-    font-size: 20px;
-    color: #003049;
-    padding: 10px 10px;
-}
-
 .footer li {
     text-align: center;
     border: solid;
@@ -117,4 +109,50 @@ nav a:hover {
 nav a.active {
     background-color: #003049;
     color: #fcbf49;
+}
+
+#about {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #FCBF49;
+    width: 85%;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+#aboutText {
+    width: 60%;
+    text-align: center;
+    font-family: body;
+    font-size: 22px;
+    color: #003049;
+    vertical-align: middle;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px 10px;
+    display: inline-flex;
+}
+
+#about img {
+    width: 30%;
+    vertical-align: middle;
+    display: inline-flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(+50%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }
