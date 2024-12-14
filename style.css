@@ -13,8 +13,16 @@
     src: url(AbrilFatface-Regular.ttf);
 }
 
+:root {
+    --color1: #003049;
+    --color2: #D62828;
+    --color3: #F77F00; 
+    --color4: #FCBF49; 
+    --color5: #EAE2B7;
+}
+
 #title {
-    background-color: #d62828;
+    background-color: var(--color2);
     margin:0;
     height: 50%;
     padding: 20px 20px 20px 20px;
@@ -25,7 +33,7 @@ h1 {
     font-family:heading;
     text-align: center;
     font-size: 125px;
-    color:#fcbf49;
+    color:var(--color4);
     font-weight: normal;
     margin:0;
     padding-top: 20px
@@ -33,7 +41,7 @@ h1 {
 }
 
 body {
-    background-color: #eae2b7;
+    background-color: var(--color5);
     padding: 0;
     margin: 0;
 }
@@ -48,8 +56,8 @@ body {
     margin-right: 20px;
     font-size: 24px;
     font-family: subheading;
-    background-color: #f77f00;
-    border-color: #D62828;
+    background-color: var(--color3);
+    border-color: var(--color2);
 }
 
 .footer ul {
@@ -58,31 +66,31 @@ body {
 
 footer {
     text-align: center;
-    background-color: #003049;
+    background-color: var(--color1);
     padding: 30px 30px;
 }
 
 footer a:link { 
     text-decoration: none; 
-    color: #EAE2B7;
+    color: var(--color5);
 } 
 footer a:visited { 
     text-decoration: none; 
-    color: #EAE2B7;
+    color: var(--color5);
 } 
 footer a:hover { 
     text-decoration: none;
-    color: #EAE2B7;
+    color: var(--color5);
 }
 footer a:active { 
     text-decoration: none; 
-    color: #EAE2B7;
+    color: var(--color5);
 }
 
 nav {
-    background-color:#f77f00;
+    background-color:var(--color3);
     text-align: center;
-    color:#003049;
+    color:var(--color1);
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -90,7 +98,7 @@ nav {
 
 nav a {
     float:left;
-    color: #003049;
+    color: var(--color1);
     text-align: center;
     padding: 20px 20px 20px 20px;
     text-decoration: none;
@@ -102,17 +110,17 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #fcbf49;
-    color: #EAE2B7;
+    background-color: var(--color4);
+    color: var(--color5);
 }
 
 nav a.active {
-    background-color: #003049;
-    color: #fcbf49;
+    background-color: var(--color1);
+    color: var(--color3);
 }
 
 #about {
-    background-color: #FCBF49;
+    background-color: var(--color4);
     margin-top: 50px;
     margin-bottom: 30px;
 
@@ -131,11 +139,9 @@ nav a.active {
     text-align: center;
     font-family: body;
     font-size: 22px;
-    color: #003049;
+    color: var(--color1);
     vertical-align: middle;
     border-radius: 10px;
-    margin-top: 30px;
-    padding: 10px 10px;
     display: inline-flex;
 }
 
@@ -143,8 +149,7 @@ nav a.active {
     width: 30%;
     vertical-align: middle;
     display: inline-flex;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .hidden {
@@ -162,35 +167,38 @@ nav a.active {
 
 h2 {
     font-family: subheading;
-    font-size: 30px;
+    font-size: 45px;
     text-decoration: none;
-    font-weight: 0;
+    font-weight: none;
 }
 
 .little {
     width: 90%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .resume {
     padding: 5px 10px;
     margin-top: 40px;
+    text-align: center;
 }
 
 #education {
-    background-color: #f77f00;
-    color: #003049;
+    background-color: var(--color3);
+    color: var(--color1);
     text-align: center; 
 }
 
 #skills {
-    background-color: #003049;
-    color: #EAE2B7;
+    background-color: var(--color1);
+    color: var(--color5);
     text-align: center; 
 }
 
 #work {
-    background-color: #D62828;
-    color: #fcbf49;
+    background-color: var(--color2);
+    color: var(--color4);
     text-align: center;
     margin-bottom: 50px;
      
