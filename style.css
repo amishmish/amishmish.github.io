@@ -237,11 +237,13 @@ h4 {
 }
 
 h5 {
-    font-family: subheading;
+    font-family: body;
     font-weight: none;
     text-decoration: none;
     padding: 1px 1px;
     margin: 0;
+    font-size: 25px;
+    color: var(--color4)
 }
 
 .little {
@@ -274,4 +276,21 @@ h5 {
 #bestbrains {
     background-color: var(--color3);
     color: var(--color1)
+}
+
+.skill {
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    transition-property: width;
+}
+
+.skill:hover {
+    width: 35%;
+    font-size: 30px;
+}
+
+.skill:hover h5{
+    font-size: 30px;
 }
