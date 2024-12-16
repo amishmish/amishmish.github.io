@@ -3,6 +3,7 @@
 <head>
     <link rel = "stylesheet" href = "style.css">
     <script defer src = "animate.js"></script>
+    <script src = "script.js"></script>
     <title>Amishi Mishra</title>
 </head>
 
@@ -10,6 +11,7 @@
 <div id="title">
     <h1>Amishi Mishra</h1>   
 </div>
+<div style = "height: 50%; width: 100%;"></div>
 </header>
 <body> 
     <div id = "about" class = "box">
@@ -50,10 +52,15 @@
     </div>
 
     <div id = "skills" class = "box resume">
-        <h2> Skills </h2>
-        <div class = "skill hiddenskill resume">
+        <h2 style="padding-bottom: 5px; margin-bottom: 0;"> Skills </h2>
+        <p style = "text-align: center; margin-top: 0;"> Click on the skills to learn more! </p>
+        <div id = "python" class = "skill hiddenskill resume" onclick = "pythonbig()">
             <img src = "python.png" alt = "Python Logo" style = "width: 20%; margin-bottom: 10px;">
             <h5> Python </h5>
+            <p id = "pythonText" class = "hidetext"> 
+                I have taken COMP110, a course that gives a rigorous introduction to programming, in python. I am learning how to use python for data analysis, using Numpy and Pandasthrough 
+                several courses. 
+            </p>
         </div>
         <div class = "skill hiddenskill resume">
             <h5> Customer Service </h5>
@@ -62,6 +69,9 @@
             <h5> Customer Service </h5>
         </div>
         
+    </div>
+
+    <div id = "displaySkill" class = "box resume" style = "display: none">
     </div>
 
     <div id = "work" class = "box resume ">

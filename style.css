@@ -21,12 +21,19 @@
     --color5: #EAE2B7;
 }
 
+header {
+    position: sticky;
+}
+
 #title {
     background-color: var(--color2);
     margin:0;
     height: 50%;
     padding: 20px 20px 20px 20px;
-    
+    position: sticky;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
 }
 
 h1 {
@@ -123,6 +130,8 @@ nav a.active {
     background-color: var(--color4);
     margin-top: 50px;
     margin-bottom: 30px;
+    transition: 0.5s;
+    transition-property: opacity, transform, filter;
 
 }
 
@@ -157,7 +166,6 @@ nav a.active {
     opacity: 0;
     filter: blur(5px);
     transform: translateY(100%);
-    transition: 1s;
     transition-property: transform, filter, opacity;
 }
 
@@ -180,11 +188,21 @@ h2 {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
+    padding: 20px 20px;
+    border-radius: 30px;
+    text-align: left;
+    margin-bottom: 25px;
+    transition: 0.5s;
+    transition-property: width, opacity, transform, filter;
+    vertical-align: center;
+}
+
+.little:hover {
+    width: 92%;
 }
 
 .resume {
     padding: 5px 10px;
-    text-align: center;
 }
 
 #education {
@@ -209,8 +227,6 @@ h2 {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(100%);
-    transition: 1s;
-    transition-property: transform, filter, opacity;
 }
 
 .showskill {
@@ -243,14 +259,9 @@ h5 {
     padding: 1px 1px;
     margin: 0;
     font-size: 25px;
-    color: var(--color4)
-}
-
-.little {
-    padding: 20px 20px;
-    border-radius: 30px;
-    text-align: left;
-    margin-bottom: 25px;
+    color: var(--color4);
+    transition-property: font-size;
+    transition: 0.5s;
 }
 
 .resume p {
@@ -283,7 +294,7 @@ h5 {
     width: 25%;
     margin-bottom: 10px;
     transition: 0.5s;
-    transition-property: width;
+    transition-property:  transform, filter, opacity, width;
     vertical-align: center;
 }
 
@@ -294,4 +305,25 @@ h5 {
 
 .skill:hover h5{
     font-size: 30px;
+}
+
+.hidetext {
+    opacity: 0;
+    font-size: 1px;
+    transition: 0.5s;
+    transition-property: font-size, opacity;
+    display: none;
+}
+
+.showtext {
+    opacity: 1;
+    font-size: 18px;
+}
+
+.skillinDisplay {
+    width: 100%;
+}
+
+#displaySkill {
+    background-color: #003049;
 }
