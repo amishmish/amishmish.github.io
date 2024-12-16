@@ -284,6 +284,7 @@ h5 {
     margin-bottom: 10px;
     transition: 0.5s;
     transition-property: width;
+    vertical-align: center;
 }
 
 .skill:hover {
