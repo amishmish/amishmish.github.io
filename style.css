@@ -131,6 +131,7 @@ nav a.active {
     margin-right: auto;
     text-align: center;
     width: 85%;
+    margin-top: 40px;
     border-radius: 30px;
 }
 
@@ -156,7 +157,8 @@ nav a.active {
     opacity: 0;
     filter: blur(5px);
     transform: translateY(100%);
-    transition: all 1s;
+    transition: 1s;
+    transition-property: transform, filter, opacity;
 }
 
 .show {
@@ -166,10 +168,12 @@ nav a.active {
 }
 
 h2 {
-    font-family: subheading;
+    font-family: heading;
     font-size: 45px;
     text-decoration: none;
     font-weight: none;
+    margin: 0;
+    padding: 10px 10px;
 }
 
 .little {
@@ -180,7 +184,6 @@ h2 {
 
 .resume {
     padding: 5px 10px;
-    margin-top: 40px;
     text-align: center;
 }
 
@@ -200,6 +203,75 @@ h2 {
     background-color: var(--color2);
     color: var(--color4);
     text-align: center;
-    margin-bottom: 50px;
-     
+}
+
+.hiddenskill {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: 1s;
+    transition-property: transform, filter, opacity;
+}
+
+.showskill {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+h3 {
+    font-family: subheading;
+    font-weight: none;
+    text-decoration: none;
+    padding: 1px 1px;
+    margin: 0;
+    font-size: 25px;
+}
+
+h4 {
+    font-family: subheading;
+    font-weight: none;
+    text-decoration: none;
+    padding: 1px 1px;
+    margin: 0;
+}
+
+h5 {
+    font-family: subheading;
+    font-weight: none;
+    text-decoration: none;
+    padding: 1px 1px;
+    margin: 0;
+}
+
+.little {
+    padding: 20px 20px;
+    border-radius: 30px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.resume p {
+    font-family: body;
+    font-size: 20px;
+}
+
+#unc {
+    background-color: var(--color1);
+    color: var(--color5);
+} 
+
+#glhs {
+    background-color: var(--color4);
+    color: var(--color1)
+}
+
+#coldstone {
+    background-color: var(--color5);
+    color: var(--color2)
+}
+
+#bestbrains {
+    background-color: var(--color3);
+    color: var(--color1)
 }
