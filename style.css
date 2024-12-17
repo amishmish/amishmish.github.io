@@ -130,8 +130,13 @@ nav a.active {
     background-color: var(--color4);
     margin-top: 50px;
     margin-bottom: 30px;
-    transition: 0.5s;
+    
 
+}
+
+#aboutcontent {
+    transition: 0.5s;
+    transition-property: transform, filter, opacity;
 }
 
 .box {
@@ -165,7 +170,6 @@ nav a.active {
     opacity: 0;
     filter: blur(5px);
     transform: translateY(100%);
-    transition-property: transform, filter, opacity;
 }
 
 .show {
