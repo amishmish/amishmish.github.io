@@ -54,24 +54,24 @@
     <div id = "skills" class = "box resume">
         <h2 style="padding-bottom: 5px; margin-bottom: 0;"> Skills </h2>
         <p style = "text-align: center; margin-top: 0;"> Click on the skills to learn more! </p>
-        <div id = "python" class = "skill hiddenskill resume" onclick = "pythonbig()">
-            <img src = "python.png" alt = "Python Logo" style = "width: 20%; margin-bottom: 10px;">
-            <h5> Python </h5>
-            <p id = "pythonText" class = "hidetext"> 
-                I have taken COMP110, a course that gives a rigorous introduction to programming, in python. I am learning how to use python for data analysis, using Numpy and Pandasthrough 
-                several courses. 
-            </p>
-        </div>
-        <div class = "skill hiddenskill resume">
-            <h5> Customer Service </h5>
-        </div>
-        <div class = "skill hiddenskill resume">
-            <h5> Customer Service </h5>
+        <div id = "gold">
+            <div id = "python" class = "skill hiddenskill resume" onclick = "skillbig('python')">
+                <img src = "python.png" alt = "Python Logo" id = "pythonimg">
+                <h5> Python </h5>
+                <p id = "pythonText" class = "hidetext"> 
+                    I have taken COMP110, a course that gives a rigorous introduction to programming, in python. I am learning how to use python for data analysis, using Numpy and Pandasthrough 
+                    several courses. 
+                </p>
+                <button id = 'pythonButton' style = "display: none;" onclick="skilllittle('python')"> Minimize</button>
+            </div>
+            <div id = 'service' class = "skill hiddenskill resume" onclick = "skillbig('service')">
+                <h5> Customer Service </h5>
+            </div>
+            <div id = 'rprogram' class = "skill hiddenskill resume" onclick = "skillbig('rprogram')">
+                <h5> Customer Service </h5>
+            </div>
         </div>
         
-    </div>
-
-    <div id = "displaySkill" class = "box resume" style = "display: none">
     </div>
 
     <div id = "work" class = "box resume ">

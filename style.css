@@ -131,7 +131,6 @@ nav a.active {
     margin-top: 50px;
     margin-bottom: 30px;
     transition: 0.5s;
-    transition-property: opacity, transform, filter;
 
 }
 
@@ -320,10 +319,35 @@ h5 {
     font-size: 18px;
 }
 
-.skillinDisplay {
-    width: 100%;
+.skillCOPY {
+    display: inline-block;
+    width: 35%;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    transition-property:  transform, filter, opacity, width;
+    vertical-align: center;
+    padding: 20px 20px;
 }
 
-#displaySkill {
-    background-color: #003049;
+.skillinDisplay {
+    width: 50%;
+    color: var(--color5)
+}
+
+button {
+    font-family: subheading;
+    color:var(--color1);
+    background-color: var(--color4);
+    border-radius: 20px;
+    font-size: 24px;
+    border: solid;
+    border-color: var(--color3);
+    border-width: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#pythonimg {
+    width: 20%;
+    margin-bottom: 10px;
 }
