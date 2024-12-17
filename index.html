@@ -9,9 +9,8 @@
 
 <header>
 <div id="title">
-    <h1>Amishi Mishra</h1>   
+    <h1 id = "titled">Amishi Mishra</h1>   
 </div>
-<div style = "height: 50%; width: 100%;"></div>
 </header>
 <body> 
     <div id = "about" class = "box">
@@ -27,9 +26,9 @@
         </div>
     </div>
 
-    <div id = "education" class = "box resume ">
+    <div id = "education" class = "box">
         <h2> Education </h2>
-        <div id = "unc" class = "little hidden resume">
+        <div id = "unc" class = "little hidden">
             <img src = "unc.png" alt = "University of North Carolina Logo" style = "display: inline-flex; width: 20%; margin-right: 10px;">
             <div style = "width: 75%;display: inline-block;">
                 <h3 style > University of North Carolina at Chapel Hill</h3>
@@ -39,7 +38,7 @@
                 </p>
             </div>
         </div>
-        <div id = "glhs" class = "little hidden resume">
+        <div id = "glhs" class = "little hidden">
             <img src = "glhs.png" alt = "Green Level High School Logo" style = "display: inline-flex; width: 20%; margin-right: 10px;">
             <div style = "width: 75%;display: inline-block; vertical-align: top;">
                 <h3> Green Level High School</h3>
@@ -51,32 +50,37 @@
         </div>
     </div>
 
-    <div id = "skills" class = "box resume">
+    <div id = "skills" class = "box">
         <h2 style="padding-bottom: 5px; margin-bottom: 0;"> Skills </h2>
         <p style = "text-align: center; margin-top: 0;"> Click on the skills to learn more! </p>
         <div id = "gold">
-            <div id = "python" class = "skill hiddenskill resume" onclick = "skillbig('python')">
-                <img src = "python.png" alt = "Python Logo" id = "pythonimg">
+            <div id = "python" class = "skill hiddenskill" onclick = "skillbig('python')">
+                <img src = "python.png" alt = "Python Logo" class = "skillimg">
                 <h5> Python </h5>
                 <p id = "pythonText" class = "hidetext"> 
-                    I have taken COMP110, a course that gives a rigorous introduction to programming, in python. I am learning how to use python for data analysis, using Numpy and Pandasthrough 
+                    I recently took COMP110, a course that gives a rigorous introduction to programming, in python. I am learning how to use python for data analysis, using Numpy and Pandas through 
                     several courses. 
                 </p>
                 <button id = 'pythonButton' style = "display: none;" onclick="skilllittle('python')"> Minimize</button>
             </div>
-            <div id = 'service' class = "skill hiddenskill resume" onclick = "skillbig('service')">
-                <h5> Customer Service </h5>
+            <div id = 'rprogram' class = "skill hiddenskill" onclick = "skillbig('rprogram')">
+                <img src = "rprogram.png" alt = "R Logo" class = "skillimg">
+                <h5> R Programming Language </h5>
+                <p id = "rprogramText" class = "hidetext">
+                    I learned how to use R for data analysis. 
+                </p>
             </div>
-            <div id = 'rprogram' class = "skill hiddenskill resume" onclick = "skillbig('rprogram')">
+            <div id = 'service' class = "skill hiddenskill" onclick = "skillbig('service')">
                 <h5> Customer Service </h5>
+                
             </div>
         </div>
         
     </div>
 
-    <div id = "work" class = "box resume ">
+    <div id = "work" class = "box ">
         <h2> Experience </h2>
-        <div id = "bestbrains" class = "little hidden resume">
+        <div id = "bestbrains" class = "little hidden">
             <img src = "bestbrains.png" alt = "Bestbrains Learning Center Logo" style = "display: inline-flex; width: 20%; margin-right: 10px;">
             <div style = "width: 75%;display: inline-block; vertical-align: top;">
                 <h3> Bestbrains Learning Center of Cary</h3>
@@ -85,7 +89,7 @@
                 </p>
             </div>
         </div>
-        <div id = "coldstone" class = "little hidden resume">
+        <div id = "coldstone" class = "little hidden ">
             <img src = "coldstone.png" alt = "Coldstone Creamery Logo" style = "display: inline-flex; width: 20%; margin-right: 10px;">
             <div style = "width: 75%;display: inline-block; vertical-align: top;">
                 <h3> Coldstone Creamery</h3>
