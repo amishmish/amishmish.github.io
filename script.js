@@ -1,8 +1,8 @@
 function smallall() {
     const treasure = document.getElementById("gold");
     for (const coin of treasure.children) { 
+        coin.classList = "skill"
         coin.style.width = '15%';
-        coin.class = "skill hiddenskill resume"
 
         const text = document.getElementById(coin.id + "Text");
         if (text) {
